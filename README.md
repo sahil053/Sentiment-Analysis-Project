@@ -11,7 +11,7 @@ steps to run this project:-
  ----> Technique used for making recommender system = Content Based 
 3.) Dataset for Sentiment Analysis - https://drive.google.com/file/d/1cVKhZ9JzDhkeEZAldNIvFdNKicyfY3SC/view?usp=sharing
 4.) Dataset for Recommender System - tmdb_5000 wale 2 csv 
-5.) HTML and CSS Code for the website - home.html , style1 and style2 , recommendation and sentiment
+5.) HTML and CSS Code for the website - home.html , style1 and style2 , recommendation and sentiment.
 6.) Flask code - app.py
 
 
