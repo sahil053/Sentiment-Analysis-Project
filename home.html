@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Home </title>
+    <link rel=" stylesheet" type="text/css" href="{{ url_for('static' , filename='css/style1.css')}}" >
+</head>
+<body>
+<div class="page">
+        <div class="header">
+            <div class="intro">
+                <h3> Movie Review and Recommendation System </h3>
+            </div>
+            <div class="navigation">
+                 <div class="1">
+                    <a href="/"> Home </a>
+                 </div>
+                 <div class="2">
+                    <a href="/sentiment"> Sentiment Analysis </a>
+                 </div>
+                 <div class="3">
+                    <a href="/recommendation"> Recommendation Engine</a>
+                 </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="discription">
+                <div class="welcome" style="font-size: 50px;"> Welcome</div>
+                <div class="about" style="font-size: 30px;">
+                    This is a small website on which a user can do sentiment analysis which is made using
+                    Naive Bayes Algorithm . The User can find similar movies with respect to a movie . The recommendation engine used is
+                    collabortive Filtering.
+                </div>
+            </div>
+            <div class="image">
+                <img src="R.png" alt="Movie Review Analysis" style="height: 60vh; width: 20vw">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

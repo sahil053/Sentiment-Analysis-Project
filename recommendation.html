@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommender Engine</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='css/style2.css')}}">
+</head>
+<body>
+<div class="page">
+        <div class="header">
+            <div class="intro">
+                <h3> Movie Review and Recommendation System </h3>
+            </div>
+            <div class="navigation">
+                 <div class="1">
+                    <a href="/"> Home </a>
+                 </div>
+                 <div class="2">
+                    <a href="/sentiment"> Sentiment Analysis </a>
+                 </div>
+                 <div class="3">
+                    <a href="/recommendation"> Recommendation Engine</a>
+                 </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div>
+                    <form action="/predict_movie" class="form"  method="POST">
+                        <label for="title"><b> Select the Movie </b> </label><br>
+                        <!--<select  id="title" name="title" required="1" style="border-radius: 5px;
+                            margin-top:5px ; size: '100' ; height: 30px; width: 300px;">
+                            {% for movie in titles %}
+                              <option value=" {{movie}} " > {{movie}} </option>
+                            {% endfor %}
+                        </select><br><br>-->
+                        <input type = text name="title" placeholder="Enter the movie name Here"><br><br>
+                        <button type="submit" id="contactsubmit" > Submit </button>
+                        {% for items in movie_list%}
+                        <p> {{ items}}</p>
+                        {%endfor%}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
